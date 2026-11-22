@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | Town Food Trail</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Town Food Trail</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trail.html">The Trail</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Suggest a stall</h1>
+      <p>
+        Know a place we missed? Tell us and we may add it to the trail. Fields
+        marked <span class="req">*</span> are required.
+      </p>
+      <form action="contact.html" method="get">
+        <div>
+          <label for="name">Your name <span class="req">*</span></label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+          />
+        </div>
+        <div>
+          <label for="email">Email address <span class="req">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+          />
+        </div>
+        <div>
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic">
+            <option value="suggestion">Suggest a new stall</option>
+            <option value="correction">Fix a mistake</option>
+            <option value="feedback">General feedback</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Your message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Tell us the stall name and what to order."
+          ></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; 2026 Town Food Trail. A class project, original copy.</p>
+      <p><a href="contact.html">Suggest a stall</a></p>
+    </footer>
+  </body>
+</html>
